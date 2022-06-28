@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Assignment</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,606&family=Poppins:ital,wght@0,400;1,100;1,200&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <a href="#home" class="logo"> Weather Web App </a>
+      <nav>
+        <ul>
+          <li>
+            <button class="view1"><span>Home</span></button>
+          </li>
+          <li>
+            <button class="temperature"><span>Temperature</span></button>
+          </li>
+          <li>
+            <button class="rain"><span>Wind Speed</span></button>
+          </li>
+          <li>
+            <div class="dropdown" id="dd-type">
+              <div class="dropbtn" id="DDTypeBtn">
+                <button id="type"><span>More</span></button>
+              </div>
+              <div class="dropdown-content">
+                <button class="type-button" id="rain">
+                  <span>Rain</span>
+                </button>
+                <button class="type-button" id="temperature">
+                  <span>Temperature</span>
+                </button>
+                <button class="type-button" id="wind_speed">
+                  <span>Wind Speed</span>
+                </button>
+                <button class="type-button" id="wind_direction">
+                  <span>Wind Direction</span>
+                </button>
+                <button class="type-button" id="humidity_in">
+                  <span>Humidity Inside</span>
+                </button>
+                <button class="type-button" id="humidity_out">
+                  <span>Humidity Outside</span>
+                </button>
+                <button class="type-button" id="light">
+                  <span>Light</span>
+                </button>
+                <button class="type-button" id="Air_pres_1">
+                  <span>Air Pressure</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button class="info"><span>Info</span></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div id="title"></div>
+      <div id="button-container">
+        <button id="update"><span>Update</span></button>
+        <div class="dropdown" id="dd">
+          <button class="dropbtn" id="mainDDButton">
+            <span>Time Interval</span>
+          </button>
+          <div class="dropdown-content">
+            <button id="now"><span>Now</span></button>
+            <button id="24last">
+              <span>Last 24h (Hourly average)</span>
+            </button>
+            <button id="48last">
+              <span>Last 48h (Hourly average)</span>
+            </button>
+            <button id="72last">
+              <span>Last 72h (Hourly average)</span>
+            </button>
+            <button id="last_week">
+              <span>Last Week (Hourly average)</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div id="data"></div>
+        <section id="chart-container"><canvas id="chart"></canvas></section>
+      </div>
+    </section>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

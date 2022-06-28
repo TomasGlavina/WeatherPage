@@ -1,0 +1,265 @@
+html,
+body,
+.wrapper {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-size: 1rem;
+    color: #FFF;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+
+button {
+    align-items: center;
+    background-color: Salmon;
+    background-image: linear-gradient(80deg, Salmon, #74BDCB);
+    border: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-bottom: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+button:active,
+button {
+    outline: 0;
+}
+
+button span {
+    font-family: 'Poppins';
+    background-color: Salmon;
+    padding: 0.6em 3em;
+    font-size: 1rem;
+    border-radius: 2px;
+    transition: 300ms;
+}
+
+button:hover span {
+    background: none;
+}
+
+#data {
+    flex: 1;
+    padding: 0.5em;
+}
+
+.wrapper {
+    text-align: center;
+    background-image: url("pexels-pixabay-209831.jpg");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    box-shadow: inset 0 0 0 1000px #446e7769;
+    overflow: auto;
+    width: 100vw;
+}
+
+header {
+    background-color: Salmon;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    color: #FFF;
+    font-size: 2rem;
+    text-decoration: none;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-left: 3em;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 5em;
+}
+
+li {
+    padding: 0 1em;
+    list-style: none;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 1rem;
+}
+
+#t1 {
+    font-size: 1rem;
+}
+
+#t23 {
+    font-size: 0.9rem;
+}
+
+table {
+    width: 99%;
+    border-collapse: collapse;
+    border: 2px solid rgb(252, 126, 112);
+    padding: 0.5em;
+    margin: 0.5em;
+    box-shadow: inset 0 0 0 1000px #23373ba8;
+}
+
+table td,
+table th {
+    border: 1px solid salmon;
+    padding: 0.5em;
+}
+
+.author {
+    box-shadow: inset 0 0 0 1000px #23373ba8;
+    border: 2px solid rgb(252, 126, 112);
+    font-size: 1.3rem;
+    margin: 1em;
+    padding: 1em;
+}
+
+.author h1 {
+    text-decoration: underline 3px solid #74BDCB;
+}
+
+#info-text {
+    border: 0;
+    box-shadow: none;
+    width: 50%;
+}
+
+#info-text td {
+    border: 0;
+    text-align: left;
+}
+
+#info-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#info-title {
+    text-decoration: underline 3px solid #74BDCB;
+    text-emphasis: solid;
+}
+
+#me-inca {
+    border-radius: 15%;
+    border: 3px solid #74BDCB;
+    height: 500px;
+    width: 400px;
+}
+
+#info-pic {
+    text-align: left;
+    align-items: left;
+    font-size: 1rem;
+}
+
+#info-pic h2{
+    text-align: center;
+}
+
+#button-container {
+    padding: 0em 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    margin : 0;
+}
+
+#button-container button {
+    background-color: salmon;
+    background-image: none;
+}
+
+#button-container span {
+    font-size: 0.7rem;
+    background-color: salmon;
+}
+
+#chart-container {
+    flex: 1;
+    padding: 0.8em;
+    width: 40%;
+    height: 100%;
+}
+
+canvas {
+    width: 600px;
+    height: 450px;
+    box-shadow: inset 0 0 0 1000px #23373ba8;
+    border: 2px solid rgb(252, 126, 112);
+    color: white;
+}
+
+#content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#type{
+    margin-left: 0,5em;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 1em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1 !important;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    border-radius: 0 !important;
+    display: block;
+    background-image: none;
+    background-color: #f1f1f1 !important;
+    width: 100%;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-content span {
+    background-color: #f1f1f1 !important;
+    width: 30px;
+    transition: none;
+}
+
+.dropdown-content button:hover {
+    background-color: #ddd;
+
+}
+
+.dropdown-content span:hover {
+    background-color: #ddd;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
